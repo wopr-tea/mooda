@@ -9,4 +9,4 @@ FROM debian:stretch-slim
  WORKDIR /data/ff
 
  EXPOSE 8080
- ENTRYPOINT ["bash", "-c", "while true ; do  echo -e \"HTTP/1.1 200 OK\nContent-Type: text/plain; charset=utf-8\n\nWelcome to Moda! Your app (mooda) is set up correctly 🍦\" | nc -l -p 8080 -q 1 ; done"]
+ ENTRYPOINT ["bash", "-c", "echo 'wopr-tea';"]
